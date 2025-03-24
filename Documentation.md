@@ -78,24 +78,27 @@ Below are the mutation testing results for each class using PIT:
   - **Mutants Killed**: 991  
   - **Survived**: 248  
   - ![Original Mutation Coverage for Range](<Include screenshot here>)
-  - ![](./media/2-Preferances.png)
+  - ![](./media/Range_Initial.jpeg)
 
 - **Updated Mutation Score**: 81%  
   - **Mutants Killed**: 998  
   - **Survived**: 241  
   - This improvement was achieved through the addition of over 50 custom test cases that addressed subtle edge conditions and previously uncovered branches.
   - ![Updated Mutation Coverage for Range](<Include screenshot here>)
+  - ![](./media/Ranged_Improved.jpeg)
 
 #### DataUtilities.java
 - **Original Mutation Score**: ~55% (based on team log and screenshots)  
   - **Mutants Generated**: 775  
   - **Mutants Killed**: ~426  
   - ![Original Mutation Coverage for DataUtilities](<Include screenshot here>)
+  - ![](./media/DataUtilities_Initial.jpeg)
 
 - **Updated Mutation Score**: 82%  
   - **Mutants Killed**: 634  
   - This increase was accomplished by adding extensive test cases covering null handling, 2D arrays with irregular dimensions, edge rounding behavior, and exception validation.
   - ![Updated Mutation Coverage for DataUtilities](<Include screenshot here>)
+  - ![](./media/DataUtilities_Improved.jpeg)
 
 These improvements required focused effort in understanding the mutation logs, reverse engineering untested branches, and repeatedly tuning test assertions to verify that mutants were being effectively killed.
 
