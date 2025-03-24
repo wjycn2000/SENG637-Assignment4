@@ -85,6 +85,14 @@ This analysis shows that many of the original tests were sufficient to catch com
 
 Mutation testing was applied to two main classes: `Range.java` and `DataUtilities.java`. Both classes were initially tested with the existing JUnit test suites provided in the assignment (referred to here as the "original" test suites). Then, each test suite was significantly expanded with custom test cases designed specifically to improve mutation coverage (referred to as the "updated" test suites).
 
+Steps to test each class:
+
+  - ![](./media/Run_Configuration.png)
+
+  - ![](./media/DataUtilitiesConfiguration.PNG)
+
+  - ![](./media/RangeConfiguration.PNG)
+
 Below are the mutation testing results for each class using PIT:
 
 #### Range.java
