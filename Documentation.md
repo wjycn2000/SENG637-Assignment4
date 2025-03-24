@@ -1,5 +1,20 @@
+# SENG 637 - Dependability and Reliability of Software Systems
+## Assignment \#4<br/>
+> **Mutation Testing (Fault Injection) & GUI and Web Testing**<br/>
+> Instructors: Dr. Behrouz Far (far@ucalgary.ca)<br/>
+> Department of Electrical and Software Engineering<br/>
+> University of Calgary<br/>
 
+Due Date: March 24, 2025
 
+**Lab. Report \#4 – Mutation Testing and Web app testing**
+
+| Group: 18      |
+|-----------------|
+| Abubakar Khalid      |
+| Ahmed Shehata      |
+| Jinyu Wang      |
+| Mohammad Abu Saleh      |
 
 
 
