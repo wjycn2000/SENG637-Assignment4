@@ -73,31 +73,33 @@ Mutation testing was applied to two main classes: `Range.java` and `DataUtilitie
 Below are the mutation testing results for each class using PIT:
 
 #### Range.java
-- **Original Mutation Score**: 80%  
+- **Original Mutation Score**: 71%  
   - **Mutants Generated**: 1239  
-  - **Mutants Killed**: 991  
-  - **Survived**: 248  
-  - ![Original Mutation Coverage for Range](<Include screenshot here>)
+  - **Mutants Killed**: 885  
+  - **Survived**: 354  
+  - Original Mutation Coverage for Range
   - ![](./media/Range_Initial.jpeg)
 
 - **Updated Mutation Score**: 81%  
   - **Mutants Killed**: 998  
   - **Survived**: 241  
   - This improvement was achieved through the addition of over 50 custom test cases that addressed subtle edge conditions and previously uncovered branches.
-  - ![Updated Mutation Coverage for Range](<Include screenshot here>)
+  - Updated Mutation Coverage for Range
   - ![](./media/Ranged_Improved.jpeg)
 
 #### DataUtilities.java
-- **Original Mutation Score**: ~55% (based on team log and screenshots)  
-  - **Mutants Generated**: 775  
-  - **Mutants Killed**: ~426  
-  - ![Original Mutation Coverage for DataUtilities](<Include screenshot here>)
+- **Original Mutation Score**: 72% (based on team log and screenshots)  
+  - **Mutants Generated**: 687  
+  - **Mutants Killed**: 497
+  - **Survived**: 190
+  - Original Mutation Coverage for DataUtilities:
   - ![](./media/DataUtilities_Initial.jpeg)
 
 - **Updated Mutation Score**: 82%  
-  - **Mutants Killed**: 634  
+  - **Mutants Killed**: 565
+  - **Survived**: 122
   - This increase was accomplished by adding extensive test cases covering null handling, 2D arrays with irregular dimensions, edge rounding behavior, and exception validation.
-  - ![Updated Mutation Coverage for DataUtilities](<Include screenshot here>)
+  - Updated Mutation Coverage for DataUtilities
   - ![](./media/DataUtilities_Improved.jpeg)
 
 These improvements required focused effort in understanding the mutation logs, reverse engineering untested branches, and repeatedly tuning test assertions to verify that mutants were being effectively killed.
