@@ -78,6 +78,7 @@ Below are the mutation testing results for each class using PIT:
   - **Mutants Killed**: 991  
   - **Survived**: 248  
   - ![Original Mutation Coverage for Range](<Include screenshot here>)
+  - ![](./media/2-Preferances.png)
 
 - **Updated Mutation Score**: 81%  
   - **Mutants Killed**: 998  
