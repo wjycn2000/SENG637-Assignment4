@@ -523,12 +523,14 @@ Key lessons:
 - Some elements (e.g., prices, reviews) were deeply nested and not directly interactable.
 - Back/forward navigation required `runScript` due to unsupported `goBack` commands.
 - Price values were split across multiple span tags (whole and fractional).
+- The Selenium IDE UI made it unclear how to add new test cases. The typical menu option to add a "New Test Case" was missing or inaccessible in the latest version, leading to confusion during development.
 
 **Solutions and lessons learned:**
 - Use `runScript` for clicking hidden or dynamically generated elements.
 - Always include `waitForElementVisible` before interactions.
 - Use `storeText` and `storeTitle` to verify dynamic content across pages.
 - Explicitly scroll to elements using `window.scrollBy` to make them visible.
+- When Selenium IDE does not provide the necessary UI for test case creation, edit the .side JSON file manually using tools like Notepad++. This allowed us to programmatically add and manage test cases outside the IDE interface.
 
 ### 3.8 Comments and Feedback
 
