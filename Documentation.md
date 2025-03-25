@@ -350,7 +350,7 @@ In conclusion, this was one of the most valuable testing labs we've done. It not
 
 ### 3.1 Correctness and Completeness of the Recorded Test Cases
 
-Our Selenium test suite for the Amazon.ca website includes ten well-defined and comprehensive test cases:
+Our [Selenium test suite](./Selenium/AmazonTest.side) for the Amazon.ca website includes ten well-defined and comprehensive test cases:
 
 - **TC01_SearchLaptop**: Searches for "Laptop" and confirms the presence of the search results container.
 - **TC02_FilterByBrandHP**: Filters search results by the brand "HP" and confirms the correct brand filter is applied.
