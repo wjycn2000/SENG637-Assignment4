@@ -307,6 +307,39 @@ After extensive troubleshooting and research, we discovered that PIT at the time
 - Added it to Eclipse’s Installed JREs
 - Set it as the default runtime for the workspace and project
 - Recompiled all test classes
+- Below are detailed steps for the process:
+
+1. Install JDK 17:
+
+    Download: Obtain the JDK 17 installer from the Oracle Java SE Downloads page. 
+
+Install: Follow the instructions provided by the installer to install JDK 17 on your system. 
+
+2. Configure Eclipse:
+
+    Open Preferences: In Eclipse, go to Window -> Preferences. 
+
+Navigate to Installed JREs: Expand "Java" and select "Installed JREs". 
+Add JDK: Click "Add..." and choose "Standard VM". 
+Browse to JDK: Click "Next" and then browse to the JDK 17 installation directory. 
+Name the JRE: Give the JRE a name (e.g., "JDK 17") and click "Finish". 
+Set as Default: Select the newly added JDK and click "Set as Default" if you want it to be the default JRE for all new Java projects. 
+Apply and Close: Click "Apply and Close". 
+
+3. Configure Projects (Optional):
+
+    Right-click project: Right-click on your Java project in the Package Explorer.
+    Go to Properties: Select "Properties".
+    Java Build Path: Select "Java Build Path".
+    Libraries Tab: Select the "Libraries" tab.
+    Edit JRE: Select the JRE and click "Edit...".
+    Select Alternate JRE: Choose "Alternate JRE" and select your JDK 17 installation.
+    Apply and Close: Click "Apply and Close". 
+
+4. Configure Compiler Compliance:
+
+    Java Compiler: Go to "Java Compiler" in the project properties.
+    Select Compliance Level: Change the "Compiler compliance level" to "17" or higher. 
 
 This resolved the compatibility issue and allowed mutation testing to proceed successfully. This experience reinforced the importance of environment compatibility when working with advanced testing tools.
 
