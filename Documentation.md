@@ -367,9 +367,9 @@ Our Selenium test suite for the Amazon.ca website includes ten well-defined and 
 - **TC09_VerifyMainMenuAndLogo**: Verifies the Amazon logo and hamburger menu are present.
 - **TC10_UseSearchAutoSuggestions**: Types into the search bar and confirms auto-suggestion appears.
 
-Each test case passes successfully as shown in the execution log (`TestsPassLog.txt`), demonstrating correctness in simulating real user interactions. The coverage spans search, filtering, navigation, cart functionality, UI validation, and suggestion interactivity.
+Each test case passes successfully as shown in the execution log [TestsPassLog.txt](./Selenium/TestsPassLog.txt), demonstrating correctness in simulating real user interactions. The coverage spans search, filtering, navigation, cart functionality, UI validation, and suggestion interactivity.
 
-![](./media/TestsPass.PNG)
+![](./Selenium/TestsPass.PNG)
 
 ### 3.2 Selenium Test Case Design Process
 
