@@ -512,20 +512,20 @@ Each group member contributed a minimum of two test cases, ensuring balanced inv
 
 Some test cases were handled solo (e.g., TC05, TC06), while others (e.g., TC07, TC08, TC10) were implemented by a teammate and integrated afterward. We collaborated via screen-sharing and shared JSON exports.
 
-Key lessons:
+#### Key lessons:
 - **Dynamic sites require collaboration** to handle flaky selectors.
 - **Selector tuning and manual inspection** are often more reliable than recording.
 
 ### 3.7 Challenges and Lessons Learned
 
-**Difficulties encountered:**
+#### **Difficulties encountered:**
 - Amazon’s DOM changes frequently and contains dynamically generated class names.
 - Some elements (e.g., prices, reviews) were deeply nested and not directly interactable.
 - Back/forward navigation required `runScript` due to unsupported `goBack` commands.
 - Price values were split across multiple span tags (whole and fractional).
 - The Selenium IDE UI made it unclear how to add new test cases. The typical menu option to add a "New Test Case" was missing or inaccessible in the latest version, leading to confusion during development.
 
-**Solutions and lessons learned:**
+#### **Solutions and lessons learned:**
 - Use `runScript` for clicking hidden or dynamically generated elements.
 - Always include `waitForElementVisible` before interactions.
 - Use `storeText` and `storeTitle` to verify dynamic content across pages.
@@ -539,7 +539,7 @@ This assignment offered hands-on exposure to Selenium testing on a real-world, d
 - Seeing how test failures emerge from real-world DOM challenges.
 - Understanding the need for fallback strategies (`runScript`, scrolling).
 
-Suggestions:
+#### Suggestions:
 - Consider allowing students to choose a simpler site to test, as Amazon’s layout can be frustrating.
 - Provide a section on handling dynamic pages with changing selectors.
 
