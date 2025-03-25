@@ -348,7 +348,17 @@ In conclusion, this was one of the most valuable testing labs we've done. It not
 
 ## 3 GUI Testing
 
-### 3.1 Correctness and Completeness of the Recorded Test Cases
+### 3.1 Introduction
+
+This section documents our team’s approach to GUI testing using Selenium IDE for Assignment 4 in SENG 637. We selected the Amazon.ca website due to its complex and dynamic user interface, which provided a rich environment to practice automation of various GUI functionalities.
+
+The objective of this part of the assignment was to evaluate the correctness, reliability, and maintainability of automated GUI test cases. It also aimed to provide insight into designing robust test flows, handling dynamic elements, and incorporating verification checkpoints that ensure confidence in the UI's behavior.
+
+Each team member contributed to the development and execution of at least two Selenium test cases. We adopted a collaborative workflow that combined initial recording, manual inspection of web elements, and scripting enhancements using built-in Selenium commands and custom scripts. The outcome is a complete and functional Selenium test suite that reflects real-world testing scenarios.
+
+The subsequent sections provide detailed analysis and documentation of the test design strategy, automation logic, verification practices, test data variety, team collaboration, and challenges encountered throughout the process.
+
+### 3.2 Correctness and Completeness of the Recorded Test Cases
 
 Our [Selenium test suite](./Selenium/AmazonTest.side) for the Amazon.ca website includes ten well-defined and comprehensive test cases:
 
@@ -371,7 +381,7 @@ Each test case passes successfully as shown in the execution log [TestsPassLog.t
 
 ![](./Selenium/TestsPass.PNG)
 
-### 3.2 Selenium Test Case Design Process
+### 3.3 Selenium Test Case Design Process
 
 We designed our test cases using a combination of:
 - **Selenium IDE recording** to capture initial workflows.
@@ -387,7 +397,7 @@ Our process emphasized:
 
 We reused the base search command set (`type`, `click`, `waitForElementVisible`) to maintain consistency across tests.
 
-### 3.3 Use of Automated Verification Points in Each Script
+### 3.4 Use of Automated Verification Points in Each Script
 
 Each script includes automated verification steps such as:
 - **`assertText`**: To confirm values like product prices, titles, or confirmation messages.
@@ -397,7 +407,7 @@ Each script includes automated verification steps such as:
 
 These verification points confirm that the expected UI elements and content states are reached after each interaction.
 
-#### 3.3.1 Use of Assertions and Checkpoints
+#### 3.4.1 Use of Assertions and Checkpoints
 
 We used assertions to:
 - Validate search result rendering (TC01).
@@ -408,14 +418,14 @@ We used assertions to:
 
 Checkpoints include `waitForElementVisible`, used consistently to ensure timing does not affect test stability.
 
-### 3.4 Use Different Test Data per Test
+### 3.5 Use Different Test Data per Test
 
 While many tests used the search term **"Laptop"** for consistency, variation was achieved as follows:
 - **TC02** applied a filter (`HP`) to validate brand filtering.
 - **TC04 series** used dynamic prices or extracted specific digits from Amazon listings.
 - **TC10** introduced the search term **"headphones"** to validate autosuggestions.
 
-#### 3.4.1 How We Tested Each Functionality with Different Test Data
+#### 3.5.1 How We Tested Each Functionality with Different Test Data
 
 - Different selectors and XPath queries were used for different elements.
 - Price values were dynamically extracted and compared.
@@ -425,7 +435,7 @@ While many tests used the search term **"Laptop"** for consistency, variation wa
 
 This approach ensured the application handled various flows with changing DOM contexts.
 
-### 3.5 Team Work and Management
+### 3.6 Team Work and Management
 
 Each group member contributed a minimum of two test cases, ensuring balanced involvement and shared ownership across the 10-case suite. Our team split responsibilities across three key roles:
 - **Recorder**: Initially recorded test cases using Selenium IDE.
@@ -438,7 +448,7 @@ Key lessons:
 - **Dynamic sites require collaboration** to handle flaky selectors.
 - **Selector tuning and manual inspection** are often more reliable than recording.
 
-### 3.6 Challenges and Lessons Learned
+### 3.7 Challenges and Lessons Learned
 
 **Difficulties encountered:**
 - Amazon’s DOM changes frequently and contains dynamically generated class names.
@@ -452,7 +462,7 @@ Key lessons:
 - Use `storeText` and `storeTitle` to verify dynamic content across pages.
 - Explicitly scroll to elements using `window.scrollBy` to make them visible.
 
-### 3.7 Comments and Feedback
+### 3.8 Comments and Feedback
 
 This assignment offered hands-on exposure to Selenium testing on a real-world, dynamic website. We particularly appreciated:
 - Learning XPath and CSS selector strategies.
