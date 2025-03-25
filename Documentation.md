@@ -146,7 +146,7 @@ Below are the mutation testing results for each class using PIT:
   - ![](./media/Ranged_Improved.jpeg)
 
 #### DataUtilities.java
-- **Original Mutation Score**: 72% (based on team log and screenshots)  
+- **Original Mutation Score**: 72%
   - **Mutants Generated**: 687  
   - **Mutants Killed**: 497
   - **Survived**: 190
