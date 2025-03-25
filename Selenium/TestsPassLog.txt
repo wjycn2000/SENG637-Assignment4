@@ -1,0 +1,276 @@
+    Running 'TC01_SearchLaptop'
+    20:55:24
+    1.open on / OK
+    20:55:24
+    2.setWindowSize on 1200x800 OK
+    20:55:24
+    3.type on id=twotabsearchtextbox with value Laptop OK
+    20:55:24
+    4.click on id=nav-search-submit-button OK
+    20:55:27
+    5.waitForElementVisible on css=div.s-main-slot with value 5000 OK
+    20:55:27
+    6.assertElementPresent on css=div.s-main-slot OK
+    20:55:30
+    'TC01_SearchLaptop' completed successfully
+    20:55:30
+    Running 'TC02_FilterByBrandHP'
+    20:55:30
+    1.open on / OK
+    20:55:30
+    2.setWindowSize on 1200x800 OK
+    20:55:31
+    3.type on id=twotabsearchtextbox with value Laptop OK
+    20:55:31
+    4.click on id=nav-search-submit-button OK
+    20:55:32
+    5.waitForElementVisible on css=div.s-main-slot with value 5000 OK
+    20:55:33
+    6.click on css=#p_123\/308445 span.a-size-base OK
+    20:55:35
+    7.waitForElementVisible on css=span.a-size-base.a-color-base with value 5000 OK
+    20:55:36
+    8.assertText on xpath=//span[contains(text(), 'HP') and contains(@class, 'a-size-base')] with value HP OK
+    20:55:38
+    9.assertValue on id=twotabsearchtextbox with value Laptop OK
+    20:55:38
+    'TC02_FilterByBrandHP' completed successfully
+    20:55:38
+    Running 'TC03_ClickProductCheckTitle'
+    20:55:38
+    1.open on / OK
+    20:55:39
+    2.setWindowSize on 1200x800 OK
+    20:55:39
+    3.type on id=twotabsearchtextbox with value Laptop OK
+    20:55:39
+    4.click on id=nav-search-submit-button OK
+    20:55:41
+    5.waitForElementVisible on css=div.s-main-slot with value 5000 OK
+    20:55:41
+    6.click on css=.a-section:nth-child(3) .a-size-base-plus > span OK
+    20:55:43
+    7.waitForElementVisible on id=productTitle with value 5000 OK
+    20:55:44
+    8.assertElementPresent on id=productTitle with value Laptop OK
+    20:55:47
+    'TC03_ClickProductCheckTitle' completed successfully
+    20:55:47
+    Running 'TC04_CheckPriceOfFirstProduct (1)'
+    20:55:47
+    1.open on / OK
+    20:55:48
+    2.setWindowSize on 1200x800 OK
+    20:55:48
+    3.type on id=twotabsearchtextbox with value Laptop OK
+    20:55:48
+    4.click on id=nav-search-submit-button OK
+    20:55:50
+    5.waitForElementVisible on css=div.s-main-slot with value 5000 OK
+    20:55:51
+    6.waitForElementVisible on css=.a-section:nth-child(3) > .a-row:nth-child(2) .a-price-whole with value 5000 OK
+    20:55:53
+    7.storeText on css=.a-section:nth-child(3) > .a-row:nth-child(2) .a-price-whole with value productPrice OK
+    20:55:53
+    echo: 299
+    20:55:53
+    'TC04_CheckPriceOfFirstProduct (1)' completed successfully
+    20:55:53
+    Running 'TC04_CheckPriceOfFirstProductAnyPrice'
+    20:55:53
+    1.open on / OK
+    20:55:54
+    2.setWindowSize on 1200x800 OK
+    20:55:54
+    3.type on id=twotabsearchtextbox with value Laptop OK
+    20:55:54
+    4.click on id=nav-search-submit-button OK
+    20:55:56
+    5.waitForElementVisible on css=div.s-main-slot with value 5000 OK
+    20:55:56
+    6.waitForElementVisible on css=.a-section:nth-child(3) > .a-row:nth-child(2) .a-price-whole with value 5000 OK
+    20:55:59
+    7.storeText on css=.a-section:nth-child(3) > .a-row:nth-child(2) .a-price-whole with value productPrice OK
+    20:55:59
+    8.assertNotText on css=.a-section:nth-child(3) > .a-row:nth-child(2) .a-price-whole OK
+    20:55:59
+    echo: 299
+    20:56:00
+    'TC04_CheckPriceOfFirstProductAnyPrice' completed successfully
+    20:56:00
+    Running 'TC04_CheckPriceOfFirstProductExactPrice'
+    20:56:00
+    1.open on / OK
+    20:56:00
+    2.setWindowSize on 1200x800 OK
+    20:56:00
+    3.type on id=twotabsearchtextbox with value Laptop OK
+    20:56:00
+    4.click on id=nav-search-submit-button OK
+    20:56:02
+    5.waitForElementVisible on css=div.s-main-slot with value 5000 OK
+    20:56:02
+    6.waitForElementVisible on css=.a-section:nth-child(3) > .a-row:nth-child(2) .a-price-whole with value 5000 OK
+    20:56:05
+    7.storeText on css=.a-section:nth-child(3) > .a-row:nth-child(2) .a-price-whole with value productPrice OK
+    20:56:05
+    8.assertText on css=.a-section:nth-child(3) > .a-row:nth-child(2) .a-price-whole with value 299 OK
+    20:56:05
+    echo: 299
+    20:56:05
+    'TC04_CheckPriceOfFirstProductExactPrice' completed successfully
+    20:56:05
+    Running 'TC04_CheckPriceOfFirstProductPriceSplit'
+    20:56:05
+    1.open on / OK
+    20:56:06
+    2.setWindowSize on 1200x800 OK
+    20:56:06
+    3.type on id=twotabsearchtextbox with value Laptop OK
+    20:56:06
+    4.click on id=nav-search-submit-button OK
+    20:56:08
+    5.waitForElementVisible on css=div.s-main-slot with value 5000 OK
+    20:56:08
+    6.waitForElementVisible on css=.a-section:nth-child(3) > .a-row:nth-child(2) .a-price-whole with value 5000 OK
+    20:56:11
+    7.storeText on css=.a-section:nth-child(3) > .a-row:nth-child(2) .a-price-whole with value wholePrice OK
+    20:56:11
+    8.storeText on css=.a-section:nth-child(3) > .a-row:nth-child(2) .a-price-fraction with value fractionPrice OK
+    20:56:11
+    echo: 299.00
+    20:56:12
+    'TC04_CheckPriceOfFirstProductPriceSplit' completed successfully
+    20:56:12
+    Running 'TC05_ClickReviewsOfFirstProduct'
+    20:56:12
+    1.open on / OK
+    20:56:12
+    2.setWindowSize on 1200x800 OK
+    20:56:12
+    3.type on id=twotabsearchtextbox with value Laptop OK
+    20:56:12
+    4.click on id=nav-search-submit-button OK
+    20:56:14
+    5.waitForElementVisible on css=div.s-main-slot with value 5000 OK
+    20:56:15
+    6.runScript on window.scrollBy(0, 1500) OK
+    20:56:17
+    7.runScript on document.querySelectorAll(".a-link-normal > .a-size-base")[0].click() with value 5000 OK
+    20:56:17
+    8.waitForElementVisible on id=averageCustomerReviewsAnchor with value 5000 OK
+    20:56:17
+    9.assertText on id=averageCustomerReviewsAnchor with value Customer reviews OK
+    20:56:21
+    'TC05_ClickReviewsOfFirstProduct' completed successfully
+    20:56:21
+    Running 'TC06_UseBrowserBackAndForward'
+    20:56:21
+    1.open on / OK
+    20:56:22
+    2.setWindowSize on 1200x800 OK
+    20:56:22
+    3.type on id=twotabsearchtextbox with value Laptop OK
+    20:56:22
+    4.click on id=nav-search-submit-button OK
+    20:56:24
+    5.waitForElementVisible on css=div.s-main-slot with value 5000 OK
+    20:56:25
+    6.runScript on window.scrollBy(0, 1000) OK
+    20:56:27
+    7.runScript on document.querySelector(".a-section:nth-child(3) .a-size-base-plus > span").click() OK
+    20:56:27
+    8.waitForElementVisible on id=productTitle with value 5000 OK
+    20:56:27
+    9.storeTitle with value productPageTitle OK
+    20:56:30
+    10.runScript on window.history.back() OK
+    20:56:30
+    11.waitForElementVisible on css=div.s-main-slot with value 5000 OK
+    20:56:31
+    12.storeTitle with value actualTitle OK
+    20:56:33
+    echo: Amazon.ca : Laptop
+    20:56:33
+    14.runScript on window.history.forward() OK
+    20:56:33
+    15.waitForElementVisible on id=productTitle with value 5000 OK
+    20:56:34
+    16.verifyTitle on ${productPageTitle} OK
+    20:56:35
+    'TC06_UseBrowserBackAndForward' completed successfully
+    20:56:35
+    Running 'TC07_AddProductToCart'
+    20:56:35
+    1.open on /ref=nav_logo OK
+    20:56:36
+    2.setWindowSize on 1936x1048 OK
+    20:56:36
+    3.click on id=pageContent OK
+    20:56:36
+    4.click on linkText=Best Sellers OK
+    20:56:38
+    5.click on css=#B0CMJBQFZ1 .p13n-sc-truncate-desktop-type2 OK
+    20:56:38
+    6.runScript on window.scrollTo(0,272) OK
+    20:56:40
+    7.click on id=add-to-cart-button OK
+    20:56:43
+    8.click on css=#sw-gtc .a-button-text OK
+    20:56:44
+    9.verifyText on css=.sc-grid-item-product-title > .a-truncate-cut with value Organika Canadian-Made Electrolytes Powder - Variety Pack Sachets (Raspberry/Lemonade/Pineapple) On-the-Go Sugar-Free Hydration and Electrolyte Replenishment… OK
+    20:56:45
+    'TC07_AddProductToCart' completed successfully
+    20:56:47
+    Running 'TC08_AddToCartConfirmation'
+    20:56:47
+    1.open on / OK
+    20:56:47
+    2.setWindowSize on 916x809 OK
+    20:56:47
+    3.mouseOver on id=nav-global-location-popover-link OK
+    20:56:48
+    4.mouseOut on id=nav-global-location-popover-link OK
+    20:56:49
+    5.mouseOver on linkText=Best Sellers OK
+    20:56:50
+    6.click on linkText=Best Sellers OK
+    20:56:50
+    7.click on css=#B085XRS7KP .p13n-sc-truncate-desktop-type2 OK
+    20:56:50
+    8.click on id=add-to-cart-button OK
+    20:56:51
+    9.verifyText on css=.a-size-medium-plus with value Added to cart OK
+    20:56:55
+    'TC08_AddToCartConfirmation' completed successfully
+    20:56:56
+    Running 'TC09_VerifyMainMenuAndLogo'
+    20:56:56
+    1.open on / OK
+    20:56:57
+    2.setWindowSize on 916x809 OK
+    20:56:57
+    3.mouseOut on id=nav-logo-sprites OK
+    20:56:57
+    4.verifyElementPresent on id=nav-logo-sprites OK
+    20:56:59
+    5.verifyElementPresent on id=nav-hamburger-menu OK
+    20:56:59
+    'TC09_VerifyMainMenuAndLogo' completed successfully
+    20:56:59
+    Running 'TC10_UseSearchAutoSuggestions'
+    20:56:59
+    1.open on / OK
+    20:57:00
+    2.setWindowSize on 916x809 OK
+    20:57:00
+    3.mouseOver on id=icp-nav-flyout OK
+    20:57:00
+    4.click on id=twotabsearchtextbox OK
+    20:57:02
+    5.type on id=twotabsearchtextbox with value headphones OK
+    20:57:02
+    6.verifyElementPresent on id=sac-suggestion-row-1-cell-1 OK
+    20:57:03
+    'TC10_UseSearchAutoSuggestions' completed successfully
+    20:57:03
