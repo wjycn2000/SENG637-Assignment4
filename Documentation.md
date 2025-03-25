@@ -16,9 +16,19 @@ Due Date: March 24, 2025
 | Jinyu Wang      |
 | Mohammad Abu Saleh      |
 
+## 1 Introduction
 
+This assignment focuses on two critical aspects of software quality assurance: mutation testing and GUI testing. Through hands-on activities, we applied fault-based and behavior-based testing techniques to assess and improve the quality of unit and interface-level tests within real-world codebases and user interfaces.
 
-## 2 Mutation Testing (50)
+The assignment is divided into two parts:
+
+Part 1: Mutation Testing — This part involved using mutation testing to evaluate and enhance the effectiveness of unit tests for selected classes (Range and DataUtilities) in the JFreeChart library. We utilized PIT (Pitest), a mutation testing framework, integrated with Eclipse through the PITclipse plugin. Surviving mutants were analyzed to identify gaps in test coverage, and additional test cases were iteratively designed to improve mutation scores.
+
+Part 2: GUI Testing with Selenium — This part required automating and validating key UI functionalities of a publicly accessible website using Selenium IDE. We selected Amazon.ca due to its dynamic DOM and user interactions. The goal was to create test cases that reflect real user behaviors and validate expected outcomes through assertions, automated verification points, and varied test data.
+
+Throughout this assignment, emphasis was placed on improving test reliability, handling challenges in real-world testing environments, and collaborating effectively within a team to divide responsibilities, enhance scripts, and validate results. The following sections describe our methodology, design decisions, test coverage, and reflections on the tools and strategies employed.
+
+## 2 Mutation Testing
 
 ### 2.1 Introduction
 
